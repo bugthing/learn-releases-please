@@ -63,3 +63,10 @@ When you are ready to cut a release, you create a commit in `main` like so:
 ```
 git commit --allow-empty -m "chore: release 1.0.0" -m "Release-As: 1.0.0"
 ```
+
+The release-please github action will recognise this as a commit to trigger a release, this will:
+* create a PR. Includes an generated update to the CHANGELOG.md.
+
+Next release-please github action will recognise the PR merge as a release, this will:
+* tag the repository merge commit for the release.
+
