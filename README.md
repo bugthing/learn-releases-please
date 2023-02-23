@@ -56,8 +56,10 @@ Commit message with scope
 feat(lang): added spanish language
 ```
 
-Commit message to trigger a release
+### Releaseing
+
+When you are ready to cut a release, you create a commit in `main` like so:
 
 ```
-chore: release
+git commit --allow-empty -m "chore: release 1.0.0" -m "Release-As: 1.0.0"
 ```
